@@ -1,0 +1,10 @@
+^C:\USERS\ARTUR\DESKTOP\STUDIA MAGISTERSKIE\PROJEKT DYPLOMOWY\QAP\CMAKELISTS.TXT
+setlocal
+C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\bin\cmake.exe "-SC:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP" "-BC:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build" --check-stamp-file "C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

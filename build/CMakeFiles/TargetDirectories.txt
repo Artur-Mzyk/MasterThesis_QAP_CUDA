@@ -1,0 +1,3 @@
+C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/qap.dir
+C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/ZERO_CHECK.dir
