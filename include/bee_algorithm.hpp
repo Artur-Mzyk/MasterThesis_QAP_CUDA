@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <curand_kernel.h>
+#include <string>
 
 #include "solution.hpp"
 
@@ -15,7 +16,7 @@ class BeeAlgorithm {
         int nep;
         int nsp;
         int ngh;
-        char* file_path;
+        std::string file_name;
         int epochs;
         int cev_split_trials;
         int lifespan;
@@ -24,13 +25,15 @@ class BeeAlgorithm {
         float **F;
         Solution** population;
         bool use_cuda;
+        float target_fitness;
 
     public:
-    	BeeAlgorithm(int n, int m, int e, int nep, int nsp, int ngh, int cev_split_trials, int lifespan, char* file_path, int epochs, bool use_cuda);
+    	BeeAlgorithm(int n, int m, int e, int nep, int nsp, int ngh, int cev_split_trials, int lifespan, std::string file_name, int epochs, bool use_cuda);
     	~BeeAlgorithm();
         void sort();
         void run();
         void save(int* pi, float* fitnesses);
+        void set_time(double computation_time);
 };
 
 

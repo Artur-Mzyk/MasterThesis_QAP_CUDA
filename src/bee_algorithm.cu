@@ -1,27 +1,30 @@
 #include "C:\Users\artur\Desktop\QAP_CUDA\include\bee_algorithm.hpp"
 
 
-BeeAlgorithm::BeeAlgorithm(int n_, int m_, int e_, int nep_, int nsp_, int ngh_, int cev_split_trials_, int lifespan_, char* file_path_, int epochs_, bool use_cuda_) {
+BeeAlgorithm::BeeAlgorithm(int n_, int m_, int e_, int nep_, int nsp_, int ngh_, int cev_split_trials_, int lifespan_, std::string file_name_, int epochs_, bool use_cuda_) {
     n = n_;
     m = m_;
     e = e_;
     nep = nep_;
     nsp = nsp_;
     ngh = ngh_;
-    file_path = file_path_;
+    file_name = file_name_;
     epochs = epochs_;
     cev_split_trials = cev_split_trials_;
     lifespan = lifespan_;
     use_cuda = use_cuda_;
 
-    std::ifstream file;
+    std::string instance_path = "data/instances/" + file_name + ".dat";
+    std::string solution_path = "data/solutions/" + file_name + ".sln";
+
+    std::ifstream instance;
     float data;
-    file.open(file_path);
-    file >> data;
+    instance.open(instance_path);
+    instance >> data;
     N = int(data);
 
-    D = new float* [N];
-    F = new float* [N];
+    D = new float*[N];
+    F = new float*[N];
 
     for (int i = 0; i < N; i++) {
         D[i] = new float[N];
@@ -30,7 +33,7 @@ BeeAlgorithm::BeeAlgorithm(int n_, int m_, int e_, int nep_, int nsp_, int ngh_,
 
     int k = 0;
 
-    while (file >> data) {
+    while (instance >> data) {
         if (k < N * N) {
             D[int(k / N)][k % N] = data;
         } else {
@@ -40,7 +43,13 @@ BeeAlgorithm::BeeAlgorithm(int n_, int m_, int e_, int nep_, int nsp_, int ngh_,
         k++;
     }
 
-    file.close();
+    instance.close();
+
+    std::ifstream solution;
+    solution.open(solution_path);
+    solution >> target_fitness;
+    solution >> target_fitness;
+    solution.close();
 
     population = new Solution*[n];
 
@@ -243,7 +252,7 @@ void BeeAlgorithm::run() {
 
 void BeeAlgorithm::save(int* pi, float* fitnesses) {
     std::ofstream file;
-    file.open("results.txt");
+    file.open("data/results/" + file_name + ".txt");
 
     for (int i = 0; i < epochs; i++) {
         for (int k = 0; k < N; k++) {
@@ -253,6 +262,24 @@ void BeeAlgorithm::save(int* pi, float* fitnesses) {
         file << fitnesses[i] << std::endl;
     }
 
+    float min_fitness = fitnesses[0];
+
+    for (int i = 1; i < epochs; i++) {
+        if (fitnesses[i] < min_fitness) {
+            min_fitness = fitnesses[i];
+        }
+    }
+
+    file << target_fitness << "," << min_fitness << ",";
+    file.close();
+}
+
+
+void BeeAlgorithm::set_time(double computation_time) {
+    std::ofstream file;
+    file.open("data/results/" + file_name + ".txt", std::ios_base::app);
+
+    file << computation_time;
     file.close();
 }
 

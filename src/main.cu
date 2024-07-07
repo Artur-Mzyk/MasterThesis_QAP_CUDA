@@ -5,6 +5,7 @@
 #include <vector>
 #include <cstring>
 #include <chrono>
+#include <string>
 
 #include "C:\Users\artur\Desktop\QAP_CUDA\include\solution.hpp"
 #include "C:\Users\artur\Desktop\QAP_CUDA\include\bee_algorithm.hpp"
@@ -23,27 +24,28 @@ void cudaCheckError() {
 int main() {
   auto t1 = std::chrono::steady_clock::now();
 
-  int n = 20;
-  int m = 80;
-  int e = 30;
+  int n = 80;
+  int m = 70;
+  int e = 20;
 
-  int nep = 50;
-  int nsp = 30;
+  int nep = 30;
+  int nsp = 20;
   int ngh = 5;
 
-  int cev_split_trials = 10;
-  int lifespan = 5;
+  int cev_split_trials = 5;
+  int lifespan = 0;
 
-  char* file_path = "data/els19.dat";
-  int epochs = 50;
+  std::string file_name = "sko100d";
+
+  int epochs = 100;
   bool use_cuda = true;
 
-  BeeAlgorithm ba = BeeAlgorithm(n, m, e, nep, nsp, ngh, cev_split_trials, lifespan, file_path, epochs, use_cuda);
+  BeeAlgorithm ba = BeeAlgorithm(n, m, e, nep, nsp, ngh, cev_split_trials, lifespan, file_name, epochs, use_cuda);
   ba.run();
 
   auto t2 = std::chrono::steady_clock::now();
   std::chrono::duration<double> duration = t2 - t1;
-  std::cout << "Execution time: " << duration.count() << " seconds" << std::endl;
+  ba.set_time(duration.count());
 
   cudaCheckError();
 
