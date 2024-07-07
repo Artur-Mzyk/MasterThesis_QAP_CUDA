@@ -32,14 +32,15 @@ class BeeAlgorithm {
     	~BeeAlgorithm();
         void sort();
         void run();
-        void save(int* pi, float* fitnesses);
+        void save(float* fitnesses);
         void set_time(double computation_time);
 };
 
 
 __global__ void setup_kernel(curandState * state, unsigned long seed);
 
-__global__ void process_epoch(int N, int* d_pi_flatten, float* d_D_F_flatten, int n, int m, int e, int nep, int nsp, int ngh, int cev_split_trials, int epochs, curandState* states, int* d_best_pi_flatten, float* d_best_fitnesses, int lifespan);
+__global__ void process_bee_classic(int N, int* d_pi_flatten, float* d_D_F_flatten, int n, int m, int e, int nep, int nsp, int ngh, int cev_split_trials, int epochs, curandState* states, float* d_best_fitnesses);
+__global__ void process_bee_ABC(int N, int* d_pi_flatten, float* d_D_F_flatten, int n, int m, int e, int nep, int nsp, int ngh, int cev_split_trials, int epochs, curandState* states, float* d_best_fitnesses, int lifespan);
 
 __device__ float get_fitness(int N, int* pi, float* D_flatten, float* F_flatten);
 __device__ void permutate(int N, int* pi, curandState* states, int j);

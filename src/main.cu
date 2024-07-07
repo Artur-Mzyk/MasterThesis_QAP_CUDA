@@ -24,20 +24,20 @@ void cudaCheckError() {
 int main() {
   auto t1 = std::chrono::steady_clock::now();
 
-  int n = 80;
-  int m = 70;
+  int n = 70;
+  int m = 60;
   int e = 20;
 
   int nep = 30;
   int nsp = 20;
   int ngh = 5;
 
-  int cev_split_trials = 5;
+  int cev_split_trials = 10;
   int lifespan = 0;
 
-  std::string file_name = "sko100d";
+  std::string file_name = "wil100";
 
-  int epochs = 100;
+  int epochs = 150;
   bool use_cuda = true;
 
   BeeAlgorithm ba = BeeAlgorithm(n, m, e, nep, nsp, ngh, cev_split_trials, lifespan, file_name, epochs, use_cuda);
