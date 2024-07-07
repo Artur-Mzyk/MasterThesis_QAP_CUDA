@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP
+# Install script for directory: C:/Users/artur/Desktop/QAP_CUDA
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/QAP")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/qap")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/artur/Desktop/QAP_CUDA/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

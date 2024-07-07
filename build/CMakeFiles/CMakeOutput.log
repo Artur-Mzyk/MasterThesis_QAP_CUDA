@@ -1,4 +1,47 @@
 The system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+MSBuild version 17.3.1+2badb37d1 for .NET Framework
+Kompilacja rozpoczęła się 07.07.2024 11:51:52.
+Projekt "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdC\CompilerIdC.vcxproj" w węźle 1 (domyślne elementy docelowe).
+PrepareForBuild:
+  Tworzenie katalogu "Debug\".
+  Tworzenie katalogu "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Trwa tworzenie "Debug\CompilerIdC.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Usuwanie pliku "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Modyfikowanie "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Kompilowanie projektu "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdC\CompilerIdC.vcxproj" wykonane (domyślne elementy docelowe).
+
+Kompilacja powiodła się.
+    Ostrzeżenia: 0
+    Liczba błędów: 0
+
+Czas, który upłynął: 00:00:03.97
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdC/CompilerIdC.exe"
+
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
 Build flags: 
@@ -7,8 +50,8 @@ Id flags:
 The output was:
 0
 MSBuild version 17.3.1+2badb37d1 for .NET Framework
-Kompilacja rozpoczęła się 20.04.2024 16:23:44.
-Projekt "C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
+Kompilacja rozpoczęła się 07.07.2024 11:51:58.
+Projekt "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
 PrepareForBuild:
   Tworzenie katalogu "Debug\".
   Tworzenie katalogu "Debug\CompilerIdCXX.tlog\".
@@ -19,7 +62,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -27,30 +70,195 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Usuwanie pliku "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Modyfikowanie "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Kompilowanie projektu "C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
+Kompilowanie projektu "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCXX\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
 
 Kompilacja powiodła się.
     Ostrzeżenia: 0
     Liczba błędów: 0
 
-Czas, który upłynął: 00:00:02.39
+Czas, który upłynął: 00:00:02.23
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/3.24.1/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d9848.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.33.31630 dla x64
+  CMakeCCompilerABI.c
+  Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9848.dir\Debug\\" /Fd"cmTC_d9848.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+  cmTC_d9848.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\Debug\cmTC_d9848.exe
+
+
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/artur/Desktop/Studia magisterskie/Projekt dyplomowy/QAP/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e58e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_95938.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
   Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.33.31630 dla x64
   CMakeCXXCompilerABI.cpp
   Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e58e4.dir\Debug\\" /Fd"cmTC_e58e4.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_e58e4.vcxproj -> C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\build\CMakeFiles\CMakeTmp\Debug\cmTC_e58e4.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_95938.dir\Debug\\" /Fd"cmTC_95938.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_95938.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\Debug\cmTC_95938.exe
 
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler:  
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+0
+MSBuild version 17.3.1+2badb37d1 for .NET Framework
+Kompilacja rozpoczęła się 07.07.2024 11:52:08.
+Projekt "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" w węźle 1 (domyślne elementy docelowe).
+PrepareForBuild:
+  Tworzenie katalogu "Debug\".
+  Tworzenie katalogu "Debug\CompilerIdCUDA.tlog\".
+InitializeBuildStatus:
+  Trwa tworzenie "Debug\CompilerIdCUDA.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+AddCudaCompileDeps:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=12 /D__CUDACC_VER_MINOR__=5 /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include" /I. /FIcuda_runtime.h /c C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu 
+Projekt "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (1) kompiluje "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (1:2) w węźle 1 (elementy docelowe: CudaBuildCore).
+CudaBuildCore:
+  Compiling CUDA source file CMakeCUDACompilerId.cu...
+  Tworzenie katalogu "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\x64\Debug".
+  cmd.exe /C "C:\Users\artur\AppData\Local\Temp\tmp6e8072a03039426797d6ee034d601c32.cmd"
+  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\vc143.pdb" -o C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu"
+  
+  C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\vc143.pdb" -o C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu" 
+  #$ _NVVM_BRANCH_=nvvm
+  #$ _SPACE_= 
+  #$ _CUDART_=cudart
+  #$ _HERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin
+  #$ _THERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin
+  #$ _TARGET_SIZE_=
+  #$ _TARGET_DIR_=
+  #$ _TARGET_SIZE_=64
+  #$ _WIN_PLATFORM_=x64
+  #$ TOP=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/..
+  #$ CICC_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../nvvm/bin
+  #$ CICC_NEXT_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../nvvm-next/bin
+  #$ NVVMIR_LIBRARY_DIR=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../nvvm/libdevice
+  #$ PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../nvvm/bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../lib;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\libnvvp;C:\Program Files (x86)\Python36-32\Scripts\;C:\Program Files (x86)\Python36-32\;C:\Users\artur\AppData\Roaming\Python\Python38\Scripts;C:\Program Files (x86)\Python38-32\;C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x64;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\msys64\mingw64\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.0\;C:\Users\artur\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python37\;C:\Users\artur\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python38\;C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\artur\AppData\Local\Programs\Python\Python38-32\;C:\Users\artur\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.2.5\bin;C:\Users\artur\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3\bin;C:\Users\artur\Desktop\Systemy Wizyjne;C:\Users\artur\AppData\Local\Markdown Monster;C:\Users\artur\.dotnet\tools;C:\msys64\ucrt64\bin;;
+  #$ INCLUDES="-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../include"  
+  #$ LIBRARIES=  "/LIBPATH:C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../lib/x64"
+  #$ CUDAFE_FLAGS=--sdk_dir "C:\Program Files (x86)\Windows Kits\10"
+  #$ PTXAS_FLAGS=
+  CMakeCUDACompilerId.cu
+  #$ resource file C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-8.res: [-D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../include"    -D "_MBCS" -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=40 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -FI "cuda_runtime.h" -Zi "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu" ]
+  #$ cl.exe @"C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-8.res" > "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+  CMakeCUDACompilerId.cu
+  #$ erase C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-8.res
+  #$ cudafe++ --ms_c++14 --microsoft_version=1933 --msvc_target_version=1933 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.33.31629/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\Program Files (x86)\Windows Kits\10" --m64 --parse_templates --gen_c_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+  #$ resource file C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-10.res: [-D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../include"    -D "_MBCS" -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=40 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -FI "cuda_runtime.h" -Zi "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu" ]
+  #$ cl.exe @"C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-10.res" > "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-9_CMakeCUDACompilerId.cpp1.ii" 
+  CMakeCUDACompilerId.cu
+  #$ erase C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-10.res
+  #$ cicc --ms_c++14 --microsoft_version=1933 --msvc_target_version=1933 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.33.31629/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\Program Files (x86)\Windows Kits\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00005178_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --module_id_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.ptx"
+  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-11_CMakeCUDACompilerId.sm_52.cubin" 
+  #$ fatbinary -64 --ident="C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-11_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+  #$ erase C:/Users/artur/AppData/Local/Temp/tmpxft_00005178_00000000-4_CMakeCUDACompilerId.fatbin
+  #$ resource file C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-12.res: [-D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include" "-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../include"   -Zi "C:\Users\artur\AppData\Local\Temp\tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]
+  #$ cl.exe @"C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-12.res" -Fo"C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+  tmpxft_00005178_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+  #$ erase C:\Users\artur\AppData\Local\Temp/tmpxft_00005178_00000000-12.res
+Kompilowanie projektu "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" wykonane (elementy docelowe: CudaBuildCore).
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\lib\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCUDA.lib" /MACHINE:X64 C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj
+     Trwa tworzenie biblioteki .\CompilerIdCUDA.lib i obiektu .\CompilerIdCUDA.exp
+LINK : warning LNK4098: domyślna biblioteka "LIBCMT" powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+  CompilerIdCUDA.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.exe
+PostBuildEvent:
+  echo CMAKE_CUDA_COMPILER=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe
+  :VCEnd
+  CMAKE_CUDA_COMPILER=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe
+FinalizeBuildStatus:
+  Usuwanie pliku "Debug\CompilerIdCUDA.tlog\unsuccessfulbuild".
+  Modyfikowanie "Debug\CompilerIdCUDA.tlog\CompilerIdCUDA.lastbuildstate".
+Kompilowanie projektu "C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" wykonane (domyślne elementy docelowe).
+
+Kompilacja powiodła się.
+
+"C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (domyślny element docelowy) (1)->
+(element docelowy Link) -> 
+  LINK : warning LNK4098: domyślna biblioteka "LIBCMT" powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\3.24.1\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+    Ostrzeżenia: 1
+    Liczba błędów: 0
+
+Czas, który upłynął: 00:00:05.98
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exp"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.lib"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.vcxproj"
+
+The CUDA compiler identification is NVIDIA, found in "C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/3.24.1/CompilerIdCUDA/CompilerIdCUDA.exe"
+
+Parsed CUDA nvcc include information from above output:
+  found 'INCLUDES=' string: ["-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin/../include"  ]
+
+
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_86d9e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Compiling CUDA source file ..\..\..\..\..\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu...
+  
+  C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe"  --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu    -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include"     --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\"Debug\"" -D_MBCS -D"CMAKE_INTDIR=\"Debug\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_86d9e.dir\Debug\vc143.pdb" -o cmTC_86d9e.dir\Debug\CMakeCUDACompilerABI.obj "C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu" 
+cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]
+cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]
+  CMakeCUDACompilerABI.cu
+cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]
+  tmpxft_000045d8_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp
+LINK : warning LNK4044: nierozpoznana opcja "/v"; zignorowano [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]
+     Trwa tworzenie biblioteki C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp/Debug/cmTC_86d9e.lib i obiektu C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp/Debug/cmTC_86d9e.exp
+LINK : warning LNK4098: domyślna biblioteka "LIBCMT" powoduje konflikt z innymi bibliotekami; użyj opcji /NODEFAULTLIB:biblioteka [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]
+  cmTC_86d9e.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\Debug\cmTC_86d9e.exe
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(link\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_86d9e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework]
+  ignore line: [  Compiling CUDA source file ..\..\..\..\..\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu...]
+  ignore line: [  ]
+  ignore line: [  C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe"  --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu    -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include"     --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\"Debug\"" -D_MBCS -D"CMAKE_INTDIR=\"Debug\"" -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd /GR" -Xcompiler "/FdcmTC_86d9e.dir\Debug\vc143.pdb" -o cmTC_86d9e.dir\Debug\CMakeCUDACompilerABI.obj "C:\Users\artur\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu" ]
+  ignore line: [cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]]
+  ignore line: [cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]]
+  ignore line: [  CMakeCUDACompilerABI.cu]
+  ignore line: [cl : Wiersz polecenia warning D9002: ignorowanie nieznanej opcji "-v" [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]]
+  ignore line: [  tmpxft_000045d8_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp]
+  ignore line: [LINK : warning LNK4044: nierozpoznana opcja "/v"]
+  ignore line: [ zignorowano [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]]
+  ignore line: [     Trwa tworzenie biblioteki C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp/Debug/cmTC_86d9e.lib i obiektu C:/Users/artur/Desktop/QAP_CUDA/build/CMakeFiles/CMakeTmp/Debug/cmTC_86d9e.exp]
+  ignore line: [LINK : warning LNK4098: domyślna biblioteka "LIBCMT" powoduje konflikt z innymi bibliotekami]
+  ignore line: [ użyj opcji /NODEFAULTLIB:biblioteka [C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\cmTC_86d9e.vcxproj]]
+  ignore line: [  cmTC_86d9e.vcxproj -> C:\Users\artur\Desktop\QAP_CUDA\build\CMakeFiles\CMakeTmp\Debug\cmTC_86d9e.exe]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
 
 

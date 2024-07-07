@@ -1,25 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\src\solution.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\src\population.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\src\bee_algorithm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="C:\Users\artur\Desktop\QAP_CUDA\include\bee_algorithm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\artur\Desktop\QAP_CUDA\include\solution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\artur\Desktop\Studia magisterskie\Projekt dyplomowy\QAP\CMakeLists.txt" />
+    <CudaCompile Include="..\src\bee_algorithm.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\main.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\solution.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="C:\Users\artur\Desktop\QAP_CUDA\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0E7E6B75-494A-3973-A287-65294A375730}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{0A1291DC-1941-3D75-AE44-3F6991E6488D}</UniqueIdentifier>
+      <UniqueIdentifier>{00A52757-064D-366A-80BC-15EA5CB6DD1A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

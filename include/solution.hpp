@@ -1,35 +1,29 @@
 #ifndef QAP_SOLUTION_HPP
 #define QAP_SOLUTION_HPP
 
-
-#include <iostream>
 #include <fstream>
-
-
-#define NULL nullptr
+#include <iostream>
 
 
 class Solution {
-    private:
-        std::string file_path;
+    public:
         int N;
         int* pi;
         float **D;
         float **F;
     	float fitness;
-    public:
-    	Solution(std::string file_path);
+        int lifespan;
+
+    	Solution(int N_, float** D_, float** F_, int lifespan_);
     	~Solution();
-        void generate_permutation();
         void permutate();
-        void display();
-        void show_matrices();
+        void permutate_conditional(int* LH, int size);
     	void calculate_fitness();
+        float calculate_conditional_fitness(int* H, int* LH, int* U, int size);
         float get_fitness();
         void set_pi(int* pi);
-        int* get_pi();
         Solution** generate_neighbours(int n, int size);
+        Solution** generate_conditional_neighbours(int n, int size, int fields);
 };
-
 
 #endif //QAP_SOLUTION_HPP
